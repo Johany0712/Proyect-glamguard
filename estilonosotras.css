@@ -1,0 +1,117 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+}
+
+.header {
+            background-color: #ff8ba7;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 1px;
+}
+
+.content {
+            background-color: white;
+            padding: 40px;
+            margin-top: -30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+}
+
+.content:hover {
+            transform: translateY(-5px);
+}
+
+        
+.content h2 {
+            color: #ff8ba7;
+            font-size: 32px;
+            margin-bottom: 15px;
+}
+
+.content p {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #5f6368;
+            margin-bottom: 20px;
+}
+   
+.content a {
+            display: inline-block;
+            background-color: #ff8ba7;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        
+}
+        
+.content a:hover {
+            background-color: #ff4c68;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        
+}
+        
+.footer {
+            background-color: #ff8ba7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.1);
+        
+}
+
+.footer p {
+            margin: 0;
+            font-size: 16px;
+}
+
+.footer-content {
+    display: flex; /* Usar flexbox para alinear el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff39a;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    
+}
+
+footer button:hover {
+    background-color: #fffad5;
+
+}

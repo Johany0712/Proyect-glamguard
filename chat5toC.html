@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Estudiantes</title>
+    <link rel="stylesheet" href="chat5toA.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <h2>Búsqueda de Estudiantes ⚝ <span id="selectedClass"></span></h2>
+        <input type="text" id="searchInput" placeholder="Buscar estudiantes...">
+        <button onclick="sendFriendRequest()">Enviar Solicitud de Amistad</button>
+        <div id="searchResults"></div>
+    </div>
+    <script>
+        // Obtener el nombre de la clase desde la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const className = urlParams.get('class');
+        document.getElementById('selectedClass').innerText = className;
+        
+        function sendFriendRequest() {
+            const searchInput = document.getElementById('searchInput').value;
+            const resultsContainer = document.getElementById('searchResults');
+
+            if (searchInput.trim() === "") {
+                alert("Por favor, ingresa un nombre para buscar.");
+                return;
+            }
+
+            const resultHTML = `
+                <div class="student-result">
+                    <p>Estudiante: ${searchInput}</p>
+                    <button onclick="alert('Solicitud de amistad enviada a ${searchInput}!')">Enviar Solicitud de Amistad</button>
+                </div>
+            `;
+
+            resultsContainer.innerHTML = resultHTML;
+        }
+    </script>
+    <footer>
+           <div class="footer-content">
+            <a href="chat4.html"><button>Volver a la Página de chat</button></a>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #ffdae4;
+    padding: 10px;
+    text-align: center;
+}
+header h1 {
+    font-size: 90px; 
+    margin: 0;       
+    color: rgba(173, 128, 214, 0.71);  
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+header p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    }
+
+.logo img {
+    width: 110px; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: auto;
+    padding: 10px;
+   
+}
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #343a40;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 2px solid #f8f9fa;
+}
+
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 100px
+}
+
+.testimonials-section {
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.testimonial {
+    background-color: rgba(230, 180, 255, 0.62);
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.testimonial p {
+    font-family: 'Verdana', sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+.testimonial h4 {
+    color: #000000;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 2.5rem;
+    color: #ff8ba7;
+}
+.container {
+    background-color: rgba(213, 235, 253, 0.58); /* Fondo blanco para el contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 40px; /* Relleno aumentado */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centra el contenedor */
+}
+
+h4 {
+    text-align: center;
+    color: #000f39; /* Color rosa suave para el título */
+    margin-bottom: 20px;
+    font-size: 2em; /* Tamaño de fuente más grande */
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block; /* Asegura que las etiquetas ocupen todo el ancho */
+    color: #000000; /* Color morado suave para etiquetas */
+}
+
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 15px; /* Relleno aumentado para mayor comodidad */
+    margin: 10px 0;
+    border: 2px solid #90caf9; /* Borde azul claro */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+select:focus, input[type="text"]:focus, textarea:focus {
+    border-color: #1e88e5; /* Cambia el color del borde al hacer foco */
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5); /* Sombra al hacer foco */
+}
+
+button {
+    background-color: rgba(116, 158, 226, 0.45); /* Color amarillo suave */
+    color: black;
+    padding: 15px; /* Relleno aumentado */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #000c4e; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    color: white;
+}
+
+
+#resultMessage {
+    text-align: center;
+    color: #001858; /* Verde para el mensaje de éxito */
+    margin-top: 20px;
+    font-weight: bold; /* Mensaje en negrita */
+    font-size: 1.2em; /* Tamaño de fuente del mensaje */
+}
+
+
+.registration-section {
+    background-color: rgba(238, 204, 255, 0.62); /* Color de fondo suave */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usar flexbox */
+    align-items: flex-start; /* Alinear verticalmente al inicio */
+    justify-content: space-evenly
+}
+
+.registration-header {
+    flex: 1; /* Permite que el título ocupe espacio */
+}
+
+.registration-form {
+    flex: 1; /* Permite que el formulario ocupe espacio */
+    display: flex;
+    flex-direction: column; /* Alinear los elementos del formulario en columna */
+}
+
+.registration-section h6 {
+    text-align: left; /* Alinear el texto a la izquierda */
+    color: #6c4281; /* Color atractivo */
+    font-size: 30px;
+    font-family: 'Comic Sans MS', cursive;
+}
+.registration-section p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.registration-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.registration-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-section button {
+    background-color:#6c4281 ; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.registration-section button:hover {
+    background-color: mediumpurple; /* Color del botón al pasar el cursor */
+}
+
+footer {
+    background-color: #ffdae4;
+    color: #333;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
